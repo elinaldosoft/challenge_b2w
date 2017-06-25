@@ -38,5 +38,11 @@ class TestImportImages(APITestCase):
         self.assertEqual(data, img.content)
 
     def test_lst_images(self):
+        data = {'images':[
+            {'original': '2a30975741c39d210b184ccb479c9040.jpg'},
+            {'small': '2a30975741c39d210b184ccb479c9040_320_240.jpg'},
+            {'medium': '2a30975741c39d210b184ccb479c9040_384_288.jpg'},
+            {'large': '2a30975741c39d210b184ccb479c9040_640_480.jpg'}]}
+        Image(uuid="teste", content=data).save()
         images = Image.objects.all()
         self.assertTrue(images)
