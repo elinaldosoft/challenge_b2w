@@ -1,12 +1,12 @@
 ## Conding Challenge
 
 ### [Logic](hell_triangle) Hell Triangle
-#### To running:
+#### How to run example app
     python run_helltriangle.py
-#### Tests:
+#### How to run tests
     python -m unittest discover -s hell_triangle -v
 
-### Run performance
+#### How to run test performance
     python -m cProfile -s time run_helltriangle.py
 
     Numbers selected [6, 5, 7, 8] = 26
