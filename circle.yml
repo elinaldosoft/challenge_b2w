@@ -1,8 +1,11 @@
 machine:
   python:
     version: 3.6.0
-  services:
-    - mongodb
+
+dependencies:
+  pre:
+    - pip install -r requirements.txt
+
 test:
   override:
     - python -m unittest discover -s hell_triangle -v
