@@ -9,4 +9,4 @@ dependencies:
 test:
   override:
     - python -m unittest discover -s hell_triangle -v
-    - coverage run manage.py test
+    - coverage run resize_photos/manage.py test
