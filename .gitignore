@@ -89,8 +89,10 @@ celerybeat-schedule
 venv/
 ENV/
 .idea/
+
 # Spyder project settings
 .spyderproject
 
 # Rope project settings
 .ropeproject
+/resize_photos/static/
