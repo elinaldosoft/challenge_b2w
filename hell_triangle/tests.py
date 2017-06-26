@@ -3,7 +3,7 @@
 import unittest
 from hell_triangle.trianglehell import get_values, prepare_matrix, summed
 from exceptions import InValidTriangle
-
+from main import matrix
 __author__ = '@elinaldosoft'
 
 
@@ -30,3 +30,7 @@ class TestHellTriangle(unittest.TestCase):
     def test_summed_values_found_triangle(self):
         values = get_values([[6], [3, 5], [9, 7, 1], [4, 6, 8, 4]])
         self.assertEqual(summed(values), 26)
+
+    def test_main(self):
+        result = matrix([[6], [3, 5], [9, 7, 1], [4, 6, 8, 4]])
+        self.assertTrue("Numbers selected 6 + 5 + 7 + 8 = 26", result)
