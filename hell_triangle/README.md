@@ -11,5 +11,6 @@ After of ordering the array, the extract is realization of values selected in tr
 
 
 
+![alt text](challenge_b2w/hell_triangle/img.png)
 
 
