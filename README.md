@@ -57,4 +57,4 @@
 
 
 #### How to run tests
-    coverage run resize_photos/manage.py test
+    coverage run resize_photos/manage.py test manage_photos
