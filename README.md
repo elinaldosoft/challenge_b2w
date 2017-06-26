@@ -48,3 +48,8 @@
 
 #### How to run tests
     coverage run resize_photos/manage.py test
+
+
+#### Dependencies
+- Python 3.6
+- MongoDB
