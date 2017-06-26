@@ -1,20 +1,24 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import collections
-from exceptions import InValidTriangle
+from exceptions import InValidTriangle, NoTriangleValid
 
 __author__ = '@elinaldosoft'
 
 
 def prepare_matrix(matrix):
-    order, matrix_sorted = {}, []
+    order, matrix_sorted, rows = {}, [], []
 
     for row in matrix:
         key = len(row)
+        rows.append(key)
 
         if key in order.keys() or not all(isinstance(item, int) for item in row):
             raise InValidTriangle('It is not triangle valid', '001')
         order[key] = row
+
+    if not [x for x in range(1, len(matrix) + 1)] == sorted(rows):
+        raise NoTriangleValid('Not a triangle with equal sides', '002')
 
     for key, values in collections.OrderedDict(sorted(order.items())).items():
         matrix_sorted.append(values)

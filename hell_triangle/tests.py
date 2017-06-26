@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import unittest
 from hell_triangle.trianglehell import get_values, prepare_matrix, summed
-from exceptions import InValidTriangle
+from exceptions import InValidTriangle, NoTriangleValid
 from main import matrix
 __author__ = '@elinaldosoft'
 
@@ -16,6 +16,13 @@ class TestHellTriangle(unittest.TestCase):
         self.assertEqual(get_values([[1], [2, 3], [10, 15, 20], [30, 4, 8, 9], [10, 12, 15, 17, 13]]), [1, 2, 10, 30, 17])
         self.assertEqual(get_values([[-1], [0, 1], [-2, -3, -4], [5, 2, 3, 6]]), [-1, 0, -2, 2])
         self.assertEqual(get_values([[1], [0, 2]]), [1, 2])
+
+        with self.assertRaises(NoTriangleValid) as cma:
+            get_values([[6], [3, 5], [4, 6, 8, 4]])
+        self.assertEqual(
+            "('Not a triangle with equal sides', '002')",
+            str(cma.exception)
+        )
 
         with self.assertRaises(InValidTriangle) as cm:
             get_values([[6], [9, 7, 1], [9, 7, 1], [4, 6, 8, 4]])
