@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import unittest
 from hell_triangle.trianglehell import get_values, prepare_matrix, summed
-from hell_triangle.exceptions import InValidTriangle
+from exceptions import InValidTriangle
 
 __author__ = '@elinaldosoft'
 

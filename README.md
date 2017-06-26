@@ -1,17 +1,27 @@
 # Conding Challenge
 
+#### Dependencies
+- Python 3.6
+- MongoDB
+
+#### Git Clone
+    git clone https://github.com/elinaldosoft/challenge_b2w.git
+    cd challenge_b2w/
+
 ## [Logic](hell_triangle) Hell Triangle
 #### How to run example app
-    python run_helltriangle.py
+    python hell_triangle/main.py matrix "[[6],[3,5],[9,7,1],[4,6,8,4]]" in format String
+
+    Numbers selected 6 + 5 + 7 + 8 = 26
+
 #### How to run tests
     python -m unittest discover -s hell_triangle -v
 
 #### How to run test performance
-    python -m cProfile -s time run_helltriangle.py
+    python -m cProfile -s time hell_triangle/main.py matrix "[[6],[3,5],[9,7,1],[4,6,8,4]]"
 
     Numbers selected [6, 5, 7, 8] = 26
-         564 function calls (553 primitive calls) in 0.005 seconds
-
+         48467 function calls (47877 primitive calls) in 0.130 seconds
 
 
 ## Resize Photos
@@ -48,8 +58,3 @@
 
 #### How to run tests
     coverage run resize_photos/manage.py test
-
-
-#### Dependencies
-- Python 3.6
-- MongoDB

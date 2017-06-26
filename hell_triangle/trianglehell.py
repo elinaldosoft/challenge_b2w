@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import collections
-from .exceptions import InValidTriangle
+from exceptions import InValidTriangle
 
 __author__ = '@elinaldosoft'
 
