@@ -8,7 +8,7 @@
     git clone https://github.com/elinaldosoft/challenge_b2w.git
     cd challenge_b2w/
 
-## [Logic](hell_triangle) Hell Triangle
+## [Logic Hell Triangle](hell_triangle)
 #### How to run example app
     python hell_triangle/main.py matrix "[[6],[3,5],[9,7,1],[4,6,8,4]]" in format String
 
