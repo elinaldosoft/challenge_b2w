@@ -24,6 +24,13 @@ class TestHellTriangle(unittest.TestCase):
             str(cm.exception)
         )
 
+        with self.assertRaises(InValidTriangle) as cmx:
+            get_values([[6], [9, 7, 1], [9, 7, 1], [4, 6, 8, 'b']])
+        self.assertEqual(
+            "('It is not triangle valid', '001')",
+            str(cmx.exception)
+        )
+
     def test_prepare_matrix(self):
         self.assertEqual([[1], [2, 1], [9, 7, 1]], prepare_matrix([[9, 7, 1], [2, 1], [1]]))
 

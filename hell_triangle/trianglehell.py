@@ -12,7 +12,7 @@ def prepare_matrix(matrix):
     for row in matrix:
         key = len(row)
 
-        if key in order.keys():
+        if key in order.keys() or not all(isinstance(item, int) for item in row):
             raise InValidTriangle('It is not triangle valid', '001')
         order[key] = row
 
