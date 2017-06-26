@@ -1,17 +1,30 @@
+appnope==0.1.0
 certifi==2017.4.17
 chardet==3.0.4
 coverage==4.4.1
+decorator==4.0.11
 Django==1.11.2
--e git+https://github.com/MongoEngine/django-mongoengine.git#egg=django-mongoengine
+-e git+https://github.com/MongoEngine/django-mongoengine.git@a2fcb05d861ad70aa6c638effb3a918e8ab5de55#egg=django_mongoengine
 djangorestframework==3.6.3
+fire==0.1.1
 gunicorn==19.7.1
 idna==2.5
+ipython==5.4.1
+ipython-genutils==0.2.0
 mongoengine==0.13.0
 olefile==0.44
+pexpect==4.2.1
+pickleshare==0.7.4
 Pillow==4.1.1
+prompt-toolkit==1.0.14
+ptyprocess==0.5.2
+Pygments==2.2.0
 pymongo==3.4.0
 pytz==2017.2
 requests==2.18.1
+simplegeneric==0.8.1
 six==1.10.0
+traitlets==4.3.2
 urllib3==1.21.1
+wcwidth==0.1.7
 whitenoise==3.3.0
