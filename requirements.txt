@@ -5,7 +5,7 @@ coverage==4.4.1
 decorator==4.0.11
 Django==1.11.2
 -e git+https://github.com/MongoEngine/django-mongoengine.git@a2fcb05d861ad70aa6c638effb3a918e8ab5de55#egg=django_mongoengine
-djangorestframework==3.6.3
+djangorestframework==3.9.1
 fire==0.1.1
 gunicorn==19.7.1
 idna==2.5
