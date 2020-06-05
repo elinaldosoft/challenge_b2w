@@ -3,7 +3,7 @@ certifi==2017.4.17
 chardet==3.0.4
 coverage==4.4.1
 decorator==4.0.11
-Django==1.11.2
+Django==1.11.29
 -e git+https://github.com/MongoEngine/django-mongoengine.git@a2fcb05d861ad70aa6c638effb3a918e8ab5de55#egg=django_mongoengine
 djangorestframework==3.6.3
 fire==0.1.1
